@@ -27,7 +27,7 @@ const handleImageUpload = (index, e) => {
 return (
     <div className="voicebank-container">
     <div className="voicebank-header">
-        <h2 className="title">등록된 보이스뱅크 (VoiceBanks)</h2>
+        <h2 className="title">보유중인 보이스뱅크 (VoiceBanks)</h2>
         <span className="page-info">{currentPage} / {totalPages} Page</span>
     </div>
 
