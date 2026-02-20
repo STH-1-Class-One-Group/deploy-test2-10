@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import Engine from './components/Engine';
+import VoiceBank from './components/VoiceBank';
+import Archive from './components/Archive';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="main-layout">
+      {/* 왼쪽: 세로로 긴 사이드바 */}
+      <aside className="sidebar-area">
+        <Sidebar />
+      </aside>
+
+      {/* 오른쪽: 엔진, 보이스뱅크, 아카이브 순차 배치 */}
+      <main className="content-area">
+        <section className="content-section">
+          <Engine />
+        </section>
+        
+        <section className="content-section">
+          <VoiceBank />
+        </section>
+        
+        <section className="content-section">
+          <Archive />
+        </section>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
