@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './voiceBank.css';
+import './VoiceBank.css';
 
 const VoiceBank = () => {
 const [currentPage, setCurrentPage] = useState(1);

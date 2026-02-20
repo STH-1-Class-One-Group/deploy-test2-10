@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './engine.css';
+import './EngineList.css';
 
 const Engine = () => {
 // 엔진 목록 데이터
@@ -40,22 +40,6 @@ return (
         </div>
     </section>
 
-    <section className="engine-section">
-        <h3 className="section-title">취급 음합엔 캐릭터</h3>
-        <div className="character-grid">
-        {/* 이미지의 검은 박스 형태를 유지한 그리드 */}
-        {[...Array(12)].map((_, i) => (
-            <div key={i} className="char-box">
-            <div className="plus-icon">+</div>
-            </div>
-        ))}
-        </div>
-    </section>
-
-    <section className="engine-section">
-        <h3 className="section-title">FREE NOTE</h3>
-        <textarea className="free-note" placeholder="자유롭게 입력해주세요."></textarea>
-    </section>
     </div>
 );
 };

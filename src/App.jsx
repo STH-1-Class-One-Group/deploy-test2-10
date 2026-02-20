@@ -1,8 +1,8 @@
 import React from 'react';
-import Sidebar from './components/Sidebar';
-import Engine from './components/Engine';
-import VoiceBank from './components/VoiceBank';
-import Archive from './components/Archive';
+import Sidebar from "./components/Sidebar/Sidebar.jsx";
+import Engine from "./components/EngineList/EngineList.jsx";
+import VoiceBank from "./components/VoiceBank/VoiceBank.jsx";
+import Archive from "./components/Archive/Archive.jsx";
 import './App.css';
 
 function App() {

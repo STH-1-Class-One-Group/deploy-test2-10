@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './archive.css';
+import './Archive.css';
 
 const Archive = () => {
 const [activeCategory, setActiveCategory] = useState('전체');
